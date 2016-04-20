@@ -52,9 +52,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为双精度浮点数
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static double ToDouble(object data)
         {
@@ -66,10 +66,10 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为双精度浮点数,并按指定的小数位4舍5入
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="digits"></param>
+        /// <param name="data">数据</param>
+        /// <param name="digits">小数位数</param>
         /// <returns></returns>
         public static double ToDouble(object data, int digits)
         {
@@ -77,9 +77,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空双精度浮点数
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static double? ToDoubleOrNull(object data)
         {
@@ -93,9 +93,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为高精度浮点数
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static decimal ToDecimal(object data)
         {
@@ -106,10 +106,10 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为高精度浮点数,并按指定的小数位4舍5入
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="digits"></param>
+        /// <param name="data">数据</param>
+        /// <param name="digits">小数位数</param>
         /// <returns></returns>
         public static decimal ToDecimal(object data, int digits)
         {
@@ -117,9 +117,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空高精度浮点数
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static decimal? ToDecimalOrNull(object data)
         {
@@ -133,10 +133,10 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空高精度浮点数,并按指定的小数位4舍5入
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="digits"></param>
+        /// <param name="data">数据</param>
+        /// <param name="digits">小数位数</param>
         /// <returns></returns>
         public static decimal? ToDecimalOrNull(object data, int digits)
         {
@@ -150,9 +150,9 @@ namespace Util
 
         #region Guid转换
         /// <summary>
-        /// 
+        /// 转换为Guid
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static Guid ToGuid(object data)
         {
@@ -163,9 +163,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空Guid
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static Guid? ToGuidOrNull(object data)
         {
@@ -179,9 +179,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为Guid集合
         /// </summary>
-        /// <param name="guid"></param>
+        /// <param name="guid">用逗号分隔的guid集合字符串，范例:83B0233C-A24F-49FD-8083-1337209EBC9A,EAB523C6-2FE7-47BE-89D5-C6D440C3033A</param>
         /// <returns></returns>
         public static List<Guid> ToGuidList(string guid)
         {
@@ -197,9 +197,9 @@ namespace Util
 
         #region 日期转换
         /// <summary>
-        /// 
+        /// 转换为日期
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static DateTime ToDate(object data)
         {
@@ -210,9 +210,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空日期
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static DateTime? ToDateOrNull(object data)
         {
@@ -228,9 +228,9 @@ namespace Util
         #endregion
         #region 布尔转换
         /// <summary>
-        /// 
+        /// 转换为布尔值
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static bool ToBool(object data)
         {
@@ -244,9 +244,9 @@ namespace Util
         }
 
         /// <summary>
-        /// 
+        /// 转换为可空布尔值
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static bool? ToBoolOrNull(object data)
         {
@@ -265,9 +265,9 @@ namespace Util
 
         #region 字符串转换
         /// <summary>
-        /// 
+        /// 转换为字符串
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static string ToString(object data)
         {
@@ -277,10 +277,10 @@ namespace Util
 
         #region 通用转换
         /// <summary>
-        /// 
+        ///  泛型转换
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="data"></param>
+        /// <typeparam name="T">目标类型</typeparam>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         public static T To<T>(object data)
         {
@@ -302,9 +302,9 @@ namespace Util
         }
         #endregion
         /// <summary>
-        /// 
+        /// 获取布尔值
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">数据</param>
         /// <returns></returns>
         private static bool? GetBool(object data)
         {
